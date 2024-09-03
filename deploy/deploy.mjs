@@ -1787,7 +1787,7 @@ metadata.set("content", char2Bytes(JSON.stringify({
 })))
 
 const deploy = async () => {
-  await importKey(Tezos, "edsk3p882yegRLXMSUaTQt21vkPtXr8MRXRhmbcnpHncBAYWqntggg");
+  await importKey(Tezos, "");
   return Tezos.contract
   .originate({
     code: contract,
@@ -1815,6 +1815,6 @@ const deploy = async () => {
 
 deploy()
 
-// const signer = new InMemorySigner("edsk3p882yegRLXMSUaTQt21vkPtXr8MRXRhmbcnpHncBAYWqntggg");
+// const signer = new InMemorySigner("");
 // const bytes = "0xc0050707070707070a0000001601b752c7f3de31759bce246416a6823e86b9756c6c00000107070a0000000e5550444154454420504f4c4943590a00000016011d4eb86a702a4c4342943b4b1d9ef41ca299b641000707000000848b95ca0c";
 // const signature = signer.sign(bytes).then(console.log);
